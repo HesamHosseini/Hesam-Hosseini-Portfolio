@@ -1,0 +1,145 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "About",
+        "experience": "Experience",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "name": "Hesam Hosseini",
+        "title": "Senior Frontend Developer & Freelance Engineer",
+        "tagline": "Building scalable UI, pixel by pixel.",
+        "ctaResume": "Download Resume",
+        "ctaProjects": "Explore Projects"
+    },
+    "about": {
+        "title": "About Me",
+        "content": "I am a Senior Frontend Developer with over 4 years of professional experience building modern, scalable, and high-performance web applications. I specialize in React, Next.js (App Router), TypeScript, and Tailwind CSS, with a strong focus on pixel-perfect UI implementation, cross-team collaboration, and UX optimization. I work full-time at Vikarno while also handling freelance projects, including crypto dashboards and premium e-commerce platforms. I'm deeply passionate about delivering fast, accessible, and multilingual web apps, and I'm known for:",
+        "bullets": [
+            "High-speed delivery and clean code",
+            "Deep integration of design into development",
+            "Precise execution of UI/UX",
+            "Excellent communication within product teams"
+        ]
+    },
+    "experience": {
+        "title": "Experience",
+        "entries": [
+            {
+                "company": "Vikarno",
+                "title": "Senior Frontend Developer",
+                "duration": "March 2025 - Present",
+                "description": "I develop high-performance web applications using Next.js 15, leveraging SSR and CSR to optimize user experience, which led to improved user satisfaction and engagement metrics. I build and maintain multilingual support using next-intl, enabling seamless localization and enhancing accessibility for global users across multiple products. I design and deploy financial applications, including tools for transaction tracking and loan management, improving operational workflows and user self-service capabilities. I customize and extend the ShadCN component library, ensuring a unified and reusable UI system across projects, which cut down development time by over 100 hours. I apply advanced rendering and caching strategies to boost scalability, resulting in up to 1.5 seconds faster page load times across key routes. I perform comprehensive testing and debugging workflows to uphold code quality, decreasing production bugs by nearly 40 incidents. I work closely with cross-functional teams to integrate UI components smoothly, reducing integration challenges by about 10 major cases."
+            },
+            {
+                "company": "Hoopad Vision",
+                "title": "Senior Frontend Developer",
+                "duration": "June 2024 - March 2025",
+                "description": "I developed a fully functional and interactive report page using Highcharts library in React.js, enabling data visualization and analytics for over 1,000 monthly active users, leading to a 15% increase in user engagement. I implemented multi-language support in Next.js 14 applications, leveraging internationalization (i18n) libraries to support 3+ languages, improving accessibility for a global user base. I engineered scalable and performant web applications using Next.js App Router, combining SSR (Server-Side Rendering) and CSR (Client-Side Rendering) techniques to optimize load times and enhance user experience, resulting in a 2-second reduction in page load times. I collaborated with backend and design teams to ensure seamless integration of APIs and UI components, reducing integration-related issues by 20%. I conducted rigorous testing and debugging, maintaining 98% code coverage and minimizing production bugs, leading to a 30% decrease in post-release issues."
+            },
+            {
+                "company": "Freelance Developer",
+                "title": "Frontend Developer",
+                "duration": "June 2024 - March 2025",
+                "description": "I engineered high-performance applications using Next.js 14, optimizing user experience through SSR and CSR techniques, resulting in a significant increase in user satisfaction scores. I customized and utilized the ShadCN component library, achieving a consistent and reusable UI across multiple projects, reducing development time by over 100 hours. I implemented advanced rendering strategies, enhancing scalability and efficiency of web applications, leading to 1.5 seconds improvement in load times. I conducted thorough testing and debugging, maintaining high-quality standards and minimizing production issues, reducing bug-related incidents by approximately 40 incidents. I collaborated with design and development teams, ensuring seamless UI component integration and reducing integration issues by around 10 major incidents."
+            },
+            {
+                "company": "MyData-co",
+                "title": "Frontend Developer",
+                "duration": "November 2022 - June 2024",
+                "description": "I refactored and analyzed code, improving readability and maintainability, leading to easier future updates and modifications, saving over 150 hours. I developed and maintained a custom UI kit using SCSS, increasing the reusability of components and reducing customization time by around 120 hours. I built a project with Next.js 13, focusing on modern web development practices and performance optimization, reducing page load times by over 60 seconds. I contributed to products that are currently used by over 100,000 users, significantly impacting user engagement and satisfaction. I optimized application performance, resulting in over 30 hours faster load time and a notable increase in user engagement."
+            },
+            {
+                "company": "Maktab Sharif",
+                "title": "Teaching Assistant",
+                "duration": "August 2022 - Today",
+                "description": "I teach HTML and CSS for building and styling web pages, and JavaScript (ES6, ES7) fundamentals and advanced features to over 300 students. I instruct students on TypeScript fundamentals, enabling robust, type-safe code development, resulting in a 30% improvement in student project stability. I guide students through React.js, including hooks, routing, custom hooks, HOC, and state management. I educate on version control with Git and GitHub, including branching, merging, and pull requests, increasing student collaboration efficiency by 30%. I tutor students in testing and debugging web applications using Jest and React Testing Library, improving test coverage by 40%."
+            }
+        ]
+    },
+    "skills": {
+        "title": "Skills",
+        "categories": {
+            "languages": "Languages",
+            "frameworks": "Frameworks",
+            "tools": "Tools",
+            "design": "Design",
+            "devtools": "Dev Tools",
+            "collaboration": "Collaboration"
+        },
+        "data": [
+            { "skill": "JavaScript", "level": 90, "category": "languages" },
+            { "skill": "TypeScript", "level": 92, "category": "languages" },
+            { "skill": "HTML", "level": 95, "category": "languages" },
+            { "skill": "CSS", "level": 95, "category": "languages" },
+            { "skill": "React", "level": 95, "category": "frameworks" },
+            { "skill": "Next.js", "level": 93, "category": "frameworks" },
+            { "skill": "Node.js", "level": 70, "category": "frameworks" },
+            { "skill": "SCSS", "level": 85, "category": "frameworks" },
+            { "skill": "Bootstrap", "level": 75, "category": "frameworks" },
+            { "skill": "Tailwind CSS", "level": 90, "category": "frameworks" },
+            { "skill": "REST API", "level": 85, "category": "tools" },
+            { "skill": "Axios", "level": 80, "category": "tools" },
+            { "skill": "GSAP", "level": 75, "category": "tools" },
+            { "skill": "Framer Motion", "level": 88, "category": "tools" },
+            { "skill": "Three.js", "level": 60, "category": "tools" },
+            { "skill": "Lenis", "level": 65, "category": "tools" },
+            { "skill": "Webpack", "level": 80, "category": "tools" },
+            { "skill": "Git", "level": 90, "category": "tools" },
+            { "skill": "Cloudflare", "level": 70, "category": "tools" },
+            { "skill": "HubSpot", "level": 60, "category": "tools" },
+            { "skill": "GraphQL", "level": 75, "category": "tools" },
+            { "skill": "Gatsby", "level": 65, "category": "tools" },
+            { "skill": "Postman", "level": 80, "category": "tools" },
+            { "skill": "Jest", "level": 70, "category": "tools" },
+            { "skill": "React Testing Library", "level": 70, "category": "tools" },
+            { "skill": "next-intl", "level": 85, "category": "tools" },
+            { "skill": "Highcharts", "level": 80, "category": "tools" },
+            { "skill": "Figma", "level": 85, "category": "design" },
+            { "skill": "Pixel-perfect UI", "level": 95, "category": "design" },
+            { "skill": "Responsive Design", "level": 90, "category": "design" },
+            { "skill": "UX Optimization", "level": 88, "category": "design" },
+            { "skill": "Cross-team Collaboration", "level": 90, "category": "design" },
+            { "skill": "Excellent Communication", "level": 90, "category": "design" }
+        ]
+    },
+    "projects": {
+        "title": "Projects",
+        "featured": [
+            {
+                "name": "Qaay.com",
+                "image": "/placeholder.svg?height=400&width=600",
+                "stack": ["Next.js", "SSR", "ShadCN", "i18n", "Caching Systems"],
+                "description": "A complete cryptocurrency exchange system that I built, featuring secure trading, real-time market data, and comprehensive portfolio management.",
+                "link": "https://qaay.com"
+            },
+            {
+                "name": "DrErfanOrchid.com",
+                "image": "/erfan.png?height=400&width=600",
+                "stack": ["Next.js", "SSR", "ShadCN", "i18n", "Caching Systems"],
+                "description": "A flower shop e-commerce platform with multi-language support, multi-warehouse management, and multi-location functionality that I designed and developed.",
+                "link": "https://drerfanorchid.com"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contact Me",
+        "email": "hesamhosseini.dev@gmail.com",
+        "phone": "+98 913 792 6899",
+        "linkedin": "https://linkedin.com/in/hesam-hosseini-dev",
+        "form": {
+            "name": "Your Name",
+            "email": "Your Email",
+            "message": "Your Message",
+            "send": "Send Message",
+            "success": "Message sent successfully!",
+            "error": "Failed to send message. Please try again."
+        }
+    },
+    "footer": {
+        "copyright": "Hesam Hosseini. All rights reserved.",
+        "scrollToTop": "Scroll to Top"
+    }
+}
