@@ -23,11 +23,8 @@ interface SkillsSectionProps {
         title: string;
         categories: {
             languages: string;
-            frameworks: string;
             tools: string;
             design: string;
-            devtools: string;
-            collaboration: string;
         };
         data: SkillData[];
         technologies?: TechnologyData[];

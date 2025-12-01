@@ -74,8 +74,6 @@ const nextConfig = {
   },
   // Enable compression for better performance (SEO factor)
   compress: true,
-  // Enable SWC minification for better performance
-  swcMinify: true,
   // Performance optimizations
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
