@@ -33,68 +33,44 @@ interface SkillsSectionProps {
 }
 
 const technologies = [
-    // Frontend Frameworks & Libraries
-    { name: "React.js", icon: "⚛️", category: "frameworks", description: "Component-based UI library" },
-    { name: "Next.js", icon: "▲", category: "frameworks", description: "Full-stack React framework" },
-    { name: "Redux", icon: "🔄", category: "frameworks", description: "State management library" },
-    { name: "Node.js", icon: "�", category: "frameworks", description: "JavaScript runtime" },
-    { name: "Express.js", icon: "🚂", category: "frameworks", description: "Web framework for Node.js" },
-
-    // UI Component Libraries
-    { name: "Chakra UI", icon: "⚡", category: "frameworks", description: "Modular component library" },
-    { name: "Material UI", icon: "🔵", category: "frameworks", description: "React component library based on Material Design" },
-    { name: "ShadCN", icon: "�", category: "frameworks", description: "Modern UI components for React" },
-
     // Programming Languages
-    { name: "Javascript", icon: "JS", category: "languages", description: "Dynamic programming language" },
-    { name: "Typescript", icon: "TS", category: "languages", description: "Typed JavaScript superset" },
+    { name: "JavaScript", icon: "JS", category: "languages", description: "Dynamic programming language" },
+    { name: "TypeScript", icon: "TS", category: "languages", description: "Typed JavaScript superset" },
     { name: "HTML5", icon: "🌐", category: "languages", description: "Modern markup language" },
     { name: "CSS3", icon: "🎨", category: "languages", description: "Advanced styling language" },
+    { name: "SASS", icon: "💅", category: "languages", description: "CSS preprocessor" },
 
-    // Development Tools
-    { name: "Git", icon: "🌿", category: "devtools", description: "Distributed version control system" },
-    { name: "GitHub", icon: "🐙", category: "devtools", description: "Git hosting platform" },
-    { name: "GitLab", icon: "🦊", category: "devtools", description: "DevOps platform" },
-    { name: "Bitbucket", icon: "📦", category: "devtools", description: "Git repository hosting" },
-    { name: "Npm", icon: "�", category: "devtools", description: "Package manager" },
-    { name: "Yarn", icon: "🧶", category: "devtools", description: "Fast package manager" },
-    { name: "Webpack", icon: "�", category: "devtools", description: "Module bundler" },
-    { name: "ESLint", icon: "🔍", category: "devtools", description: "JavaScript linting utility" },
-    { name: "Prettier", icon: "✨", category: "devtools", description: "Code formatting tool" },
-
-    // Build & Deployment Tools
+    // Tools & Frameworks
+    { name: "React.js", icon: "⚛️", category: "tools", description: "Component-based UI library" },
+    { name: "Next.js", icon: "▲", category: "tools", description: "Full-stack React framework" },
+    { name: "Node.js", icon: "🟢", category: "tools", description: "JavaScript runtime" },
+    { name: "Redux", icon: "🔄", category: "tools", description: "State management library" },
+    { name: "GraphQL", icon: "🚀", category: "tools", description: "Query language for APIs" },
+    { name: "Git", icon: "🌿", category: "tools", description: "Distributed version control system" },
+    { name: "Docker", icon: "🐳", category: "tools", description: "Container platform" },
     { name: "Vercel", icon: "▲", category: "tools", description: "Deployment platform" },
-    { name: "Firebase", icon: "�", category: "tools", description: "Backend-as-a-Service" },
+    { name: "Bitbucket Pipelines", icon: "📦", category: "tools", description: "CI/CD platform" },
+    { name: "ShadCN UI", icon: "✨", category: "tools", description: "Modern UI components for React" },
+    { name: "Chakra UI", icon: "⚡", category: "tools", description: "Modular component library" },
+    { name: "Material UI", icon: "🔵", category: "tools", description: "React component library" },
+    { name: "Payload CMS", icon: "📦", category: "tools", description: "Headless CMS" },
+    { name: "Storybook", icon: "📖", category: "tools", description: "Component development tool" },
     { name: "Weblate", icon: "🌍", category: "tools", description: "Translation platform" },
-    { name: "Apollo GraphQL", icon: "🚀", category: "tools", description: "GraphQL client & server" },
-
-    // Styling & CSS Tools
-    { name: "Sass", icon: "�", category: "tools", description: "CSS preprocessor" },
-    { name: "Styled-components", icon: "�", category: "tools", description: "CSS-in-JS styling" },
-    { name: "Storybook", icon: "�", category: "tools", description: "Component development tool" },
 
     // Design Tools
     { name: "Figma", icon: "🎨", category: "design", description: "Collaborative design tool" },
     { name: "Adobe XD", icon: "🔶", category: "design", description: "User experience design software" },
-
-    // Collaboration & Project Management
-    { name: "Slack", icon: "💬", category: "collaboration", description: "Team communication platform" },
-    { name: "Teams", icon: "👥", category: "collaboration", description: "Microsoft collaboration platform" },
-    { name: "Jira", icon: "📊", category: "collaboration", description: "Project management and issue tracking" },
 ];
 
 export function SkillsSection({ dict, lang }: SkillsSectionProps) {
     const [selectedTech, setSelectedTech] = useState<TechnologyData | null>(null);
     const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
 
-    // Extended categories with defaults for new ones
+    // Categories matching the dictionary structure
     const extendedCategories = {
         languages: dict.categories.languages || "Languages",
-        frameworks: dict.categories.frameworks || "Frameworks",
         tools: dict.categories.tools || "Tools",
         design: dict.categories.design || "Design",
-        devtools: dict.categories.devtools || "Dev Tools",
-        collaboration: dict.categories.collaboration || "Collaboration",
     };
 
     const categories = Object.values(extendedCategories);
@@ -115,11 +91,8 @@ export function SkillsSection({ dict, lang }: SkillsSectionProps) {
                 // Assign default proficiency levels based on category
                 const defaultLevels: Record<string, number> = {
                     languages: 90,
-                    frameworks: 85,
-                    tools: 75,
+                    tools: 85,
                     design: 80,
-                    devtools: 85,
-                    collaboration: 75,
                 };
                 return {
                     category: categoryName,
